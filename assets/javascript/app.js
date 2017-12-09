@@ -5,6 +5,7 @@ var newSeconds;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
 var unanswered = 3;
+var questions = $('#questions').clone()
 
 //Functions
 
@@ -77,6 +78,7 @@ $( document ).ready()
 		//When any answer in the first question is clicked, disable the others
 		$('.answer').on('click', function() {
 			$('.answer').attr('disabled', 'disabled');
+
 		})
 
 		//When any answer in the second question is clicked, disable the others
@@ -87,7 +89,6 @@ $( document ).ready()
 		//When any answer in the third question is clicked, disable the others
 		$('.boop').on('click', function() {
 			$('.boop').attr('disabled', 'disabled')
-			$('boop').setAttribute('checked')
 		})
 		
 		//When a correct choice circle is clicked
@@ -129,7 +130,7 @@ $( document ).ready()
 		$('#time').text('Time Remaining: ' + seconds)
 
 
-
+	$('#questions').replaceWith(questions.clone())
 		
 
 
