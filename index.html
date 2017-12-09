@@ -50,50 +50,73 @@
 			<p id="time"></p>
 				<p class ="questions" id="question-1">
 					Which of these is the WORST option for surviving a bear attack?
-						<form action="">
-  							<input class="incorrect" type="radio" name="bear" value="pepper">Spray it with bear pepper spray
-  							<input class="incorrect" type="radio" name="bear" value="fetal">Curl up in a fetal position
-  							<input class="correct" type="radio" name="bear" value="run">Run and hide
+						<form class="form" action="">
+  							<input class="incorrect answer" type="radio">Spray it with bear pepper spray
+  							<input class="incorrect answer" type="radio">Curl up in a fetal position
+  							<input class="correct answer" type="radio">Run and hide
 						</form>
 				</p>
 
 				<p class ="questions" id="question-2">
 					To avoid lightning strike, when is it safe to re-enter open space after a thunderstorm?
-						<form action="">
-  							<input class="incorrect" type="radio" name="lightning" value="10">10 minutes after the last rumble
-  							<input class="correct" type="radio" name="Lightning" value="30">30 minutes after the last rumble
-  							<input class="incorrect" type="radio" name="Lightning" value="hour">At LEAST one hour
+						<form class="form">
+  							<input class="incorrect thing" type="radio">10 minutes after the last rumble
+  							<input class="correct thing" type="radio">30 minutes after the last rumble
+  							<input class="incorrect thing" type="radio">At LEAST one hour
 						</form>
 				</p>
 
 				<p class="questions" id="question-3">
 					Which of these options is the acceptable thing to do if bitten by a posinous snake?
-						<form action="">
-  							<input class="incorrect" type="radio" name="snake" value="cut">Use a sharp object to cut around the area of the bite
-  							<input class="incorrect" type="radio" name="snake" value="suck">Suck out the venom
-  							<input class="correct" type="radio" name="snake" value="correct">Wash, immobalize, and bandage while waiting for help
+						<form class="form">
+  							<input class="incorrect boop" type="radio">Use a sharp object to cut around the area of the bite
+  							<input class="incorrect boop" type="radio">Suck out the venom<br>
+  							<input class="correct boop" type="radio">Wash, immobalize, and bandage while waiting for help
 						</form>
 				</p>
 
-			</div>
+				<button class="submit">Submit</button>
 
-		<div class="final">
-		</div>		
+			</div>	
 	</div>
 
 </div>
 
 <!--THIS IS THE HTML FOR THE FINAL SCORE PAGE-->
 
+<div class="Final-Screen">
+		<div class="heading-3">
+			<h3>Extreme Survival Trivia!</h3>
+		</div>
 
+		<br>
+		<br>
 
-			
+		<div class="Final-Window">
+			<div class="final-window-text">
+				<p>Did You Survive??</p>
 
+				<p class="final-correct">
+				</p>
 
+				<p class="final-incorrect">
+				</p>
 
+				<p class="unanswered">
+				</p>
 
-	<!--Linking my JS file-->
-	<script src="assets/javascript/app.js"></script>
+				<img class="snake" src="assets/images/snake.png">
+
+				<button class="reset">Reset</button>
+
+			</div>
+
+		</div>
+</div>
+
+<!--Linking my JS file-->
+<script src="assets/javascript/app.js"></script>
+
 </body>
 </html>
 
