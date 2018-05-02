@@ -1,6 +1,6 @@
 //Global Variables
 
-var seconds = 10;
+var seconds = 60;
 var newSeconds;
 var correctAnswers = 0;
 var incorrectAnswers = 0;
